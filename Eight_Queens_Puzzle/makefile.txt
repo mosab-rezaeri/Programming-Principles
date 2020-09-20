@@ -1,0 +1,17 @@
+#
+# PROGRAM: 8 queens
+# AUTHOR:  Mosab Rezaei
+#
+
+CXXFLAGS+=-Wall -Werror -std=c++11
+
+PROGS=queens
+
+.PHONY: all clean world
+
+all: $(PROGS)
+
+clean:
+	rm -f *.o $(PROGS)
+
+world: clean all
