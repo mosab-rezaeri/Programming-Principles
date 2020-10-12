@@ -1,0 +1,23 @@
+#
+# PROGRAM: simplesim
+# AUTHOR:  Mosab Rezaei
+#
+
+
+# Compiler variables
+CXXFLAGS = -Wall -Werror -std=c++11
+
+# Rule to link object code files to create executable file
+main: main.o simplesim.o
+	g++ $(CXXFLAGS) -o main main.o simplesim.o
+
+# Rules to compile source code files to object code
+main.o: main.cpp simplesim.h
+	g++ $(CXXFLAGS) -c main.cpp
+
+simplesim.o: simplesim.cpp simplesim.h
+	g++ $(CXXFLAGS) -c simplesim.cpp
+
+# Pseudo-target to remove object code and executable files
+clean:
+	-rm *.o main
