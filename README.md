@@ -6,4 +6,4 @@
 
 #### 3. Sorting Algorithms:
 
- Bubble Sort - Insertoin Sort - Merge Sort - Quick Sort - Selection Sort
+ Bubble Sort - Insertion Sort - Merge Sort - Quick Sort - Selection Sort
